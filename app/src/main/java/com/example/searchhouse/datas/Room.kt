@@ -1,6 +1,6 @@
 package com.example.searchhouse.datas
 
-class House(price: Int, address: String, floor: Int, description: String) {
+class Room(val price: Int, val address: String, val floor: Int, val description: String) {
 
     fun getPriceText(): String
     {
