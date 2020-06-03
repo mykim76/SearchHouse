@@ -10,8 +10,9 @@
         android:orientation="horizontal"
         android:padding="10dp">
         <ImageView
+            android:id="@+id/imgHouse"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/house1"
             android:scaleType="center"
             android:layout_weight="1"
@@ -23,7 +24,6 @@
             android:padding="10dp"
             android:gravity="center_vertical"
             android:layout_weight="3">
-
 
             <TextView
                 android:id="@+id/prictTxt"
