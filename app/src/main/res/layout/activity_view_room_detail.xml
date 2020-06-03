@@ -15,8 +15,8 @@
         android:src="@drawable/house2"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
         android:orientation="vertical"
         android:gravity="center">
 
@@ -24,30 +24,26 @@
             android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="#FFA509"
             android:text="8,000"/>
 
         <TextView
-            android:id="@+id/txtAddress"
+            android:id="@+id/txtDesc"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="설명 문구 자리"
             android:textColor="#000000"/>
-        <TextView
-            android:id="@+id/txtDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="~구~동"
-            android:textColor="#000000"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#CFCFCF"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CFCFCF"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,12 +62,18 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/txtAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="~구 ~동"
                 android:textColor="#000000"/>
 
         </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CFCFCF"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,6 +91,7 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/txtFloor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="~층"
@@ -100,7 +103,5 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#CFCFCF"/>
-
-    </LinearLayout>
 
 </LinearLayout>

@@ -19,7 +19,15 @@ class RoomAdapter(context:Context,resId:Int, list: List<Room>):ArrayAdapter<Room
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         var tempRow = convertView
-        if(tempRow==null){
+//        if(tempRow==null){
+//            tempRow = inf.inflate(R.layout.room_list_item, null)
+//        }
+        
+        tempRow?.let{
+            //null이 아닐때 실행할 함수들
+
+        }.let{
+            //null일때 실행할 함수
             tempRow = inf.inflate(R.layout.room_list_item, null)
         }
 

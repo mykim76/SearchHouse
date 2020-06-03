@@ -23,8 +23,9 @@ class ViewRoomDetailActivity : BaseActivity() {
 
         imgHouse.setImageResource(resourceId)
         txtPrice.text = myRoom.getPriceText()
-        txtAddress.text = "${myRoom.address}, ${myRoom.getFlower()}"
+        txtAddress.text = "${myRoom.address}"
         txtDesc.text = myRoom.description
+        txtFloor.text = myRoom.getFlower()
     }
 
     override fun setupEvents() {
